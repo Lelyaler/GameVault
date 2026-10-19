@@ -1,0 +1,19 @@
+{
+  "name": "GameVault — PlayStation Console Experience",
+  "short_name": "GameVault",
+  "description": "Immersive cinematic video games discovery hub and backlog tracker inspired by PlayStation 5.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

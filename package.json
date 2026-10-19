@@ -1,0 +1,49 @@
+{
+  "name": "game-vault",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PlayStation 5 inspired video game discovery hub and backlog tracker built with React 19, TypeScript, and Tailwind CSS.",
+  "author": "Valeriya Chernyavskaya <lelyaler@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://lelyaler.github.io/React-TypeScript/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lelyaler/React-TypeScript.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "tailwind-css",
+    "game-backlog",
+    "ps5-ui",
+    "rawg-api",
+    "gamepad-api",
+    "web-audio-api",
+    "pwa"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "test": "vitest run",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "lucide-react": "^1.46.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0",
+    "vitest": "^4.1.11"
+  }
+}

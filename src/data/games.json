@@ -1,0 +1,2262 @@
+[
+  {
+    "id": 3328,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/c0i88t0Kacs",
+    "slug": "the-witcher-3-wild-hunt",
+    "name": "The Witcher 3: Wild Hunt",
+    "released": "2015-05-18",
+    "background_image": "images/capsules/the-witcher-3-wild-hunt.webp",
+    "backdrop_image": "images/backdrops/witcher-3.webp",
+    "rating": 4.65,
+    "rating_top": 5,
+    "metacritic": 92,
+    "playtime": 46,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      },
+      {
+        "platform": {
+          "id": 7,
+          "name": "Nintendo",
+          "slug": "nintendo"
+        }
+      }
+    ],
+    "description_raw": "Культовая ролевая игра от CD PROJEKT RED. Вы — Геральт из Ривии, наемный охотник на чудовищ. Перед вами раскинулся охваченный войной континент, где вам предстоит найти Дитя Предназначения.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/ss_5710298af2318afd9aa72449ef29ac4a2ef64d8e.600x338.jpg"
+      },
+      {
+        "id": 2,
+        "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/ss_0901e64e9d4b8ebaea8348c194e7a3644d2d832d.600x338.jpg"
+      },
+      {
+        "id": 3,
+        "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/ss_112b1e176c1bd271d8a565eacb6feaf90f240bb2.600x338.jpg"
+      },
+      {
+        "id": 4,
+        "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/ss_d1b73b18cbcd5e9e412c7a1dead3c5cd7303d2ad.600x338.jpg"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: 64-bit Windows 7, 8 (8.1) | Процессор: Intel CPU Core i5-2500K 3.3GHz / AMD A10-5800K APU | ОЗУ: 6 GB | Видеокарта: Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870 | Диск: 50 GB",
+      "recommended": "ОС: 64-bit Windows 10 | Процессор: Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz | ОЗУ: 8 GB | Видеокарта: Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290 | Диск: 50 GB SSD"
+    }
+  },
+  {
+    "id": 41494,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/qIcTM8WXFjk",
+    "slug": "cyberpunk-2077",
+    "name": "Cyberpunk 2077",
+    "released": "2020-12-10",
+    "background_image": "images/capsules/cyberpunk-2077.webp",
+    "backdrop_image": "images/backdrops/cyberpunk-2077.webp",
+    "rating": 4.25,
+    "rating_top": 5,
+    "metacritic": 86,
+    "playtime": 62,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Приключенческая ролевая игра с открытым миром, действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся превыше всего.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "id": 4,
+        "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: 64-bit Windows 10 | Процессор: Core i7-6700 или Ryzen 5 1600 | ОЗУ: 12 GB | Видеокарта: GeForce GTX 1060 6GB или Radeon RX 580 8GB | Диск: 70 GB SSD",
+      "recommended": "ОС: 64-bit Windows 10 | Процессор: Core i7-12700 или Ryzen 7 7800X3D | ОЗУ: 16 GB | Видеокарта: GeForce RTX 2060 SUPER или Radeon RX 5700 XT | Диск: 70 GB SSD"
+    }
+  },
+  {
+    "id": 3498,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/QkkoHAzjnUs",
+    "slug": "grand-theft-auto-v",
+    "name": "Grand Theft Auto V",
+    "released": "2013-09-17",
+    "background_image": "images/capsules/grand-theft-auto-v.webp",
+    "backdrop_image": "images/backdrops/grand-theft-auto-v.webp",
+    "rating": 4.47,
+    "rating_top": 5,
+    "metacritic": 96,
+    "playtime": 80,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Чтобы выжить в неприветливом городе, трем очень разным преступникам приходится решиться на серию дерзких ограблений.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/ss_32aa18ab3175e3002217862dd5917646d298ab6b.600x338.jpg?t=1765387725"
+      },
+      {
+        "id": 2,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/ss_2744f112fa060320d191a50e8b3a92441a648a56.600x338.jpg?t=1765387725"
+      },
+      {
+        "id": 3,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/ss_da39c16db175f6973770bae6b91d411251763152.600x338.jpg?t=1765387725"
+      },
+      {
+        "id": 4,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/ss_bd5db78286be0a7c6b2c62519099a9e27e6b06f3.600x338.jpg?t=1765387725"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 64 Bit | Процессор: Intel Core 2 Quad CPU Q6600 @ 2.40GHz / AMD Phenom 9850 | ОЗУ: 4 GB | Видеокарта: NVIDIA 9800 GT 1GB / AMD HD 4870 1GB | Диск: 110 GB",
+      "recommended": "ОС: Windows 10 64 Bit | Процессор: Intel Core i5 3470 @ 3.2GHz / AMD X8 FX-8350 @ 4GHz | ОЗУ: 8 GB | Видеокарта: NVIDIA GTX 660 2GB / AMD HD 7870 2GB | Диск: 110 GB"
+    }
+  },
+  {
+    "id": 1245620,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/E3Huy2cdih0",
+    "slug": "elden-ring",
+    "name": "Elden Ring",
+    "released": "2022-02-25",
+    "background_image": "images/capsules/elden-ring.webp",
+    "backdrop_image": "images/backdrops/elden-ring.webp",
+    "rating": 4.72,
+    "rating_top": 5,
+    "metacritic": 96,
+    "playtime": 75,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Ролевой экшен от FromSoftware и Джорджа Р. Р. Мартина. Восстаньте, погасшая душа, и станьте владыкой Междуземья.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/ss_943bf6fe62352757d9070c1d33e50b92fe8539f1.600x338.jpg?t=1789162449"
+      },
+      {
+        "id": 2,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/ss_dcdac9e4b26ac0ee5248bfd2967d764fd00cdb42.600x338.jpg?t=1789162449"
+      },
+      {
+        "id": 3,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/ss_3c41384a24d86dddd58a8f61db77f9dc0bfda8b5.600x338.jpg?t=1789162449"
+      },
+      {
+        "id": 4,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/ss_e0316c76f8197405c1312d072b84331dd735d60b.600x338.jpg?t=1789162449"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 | Процессор: INTEL CORE I5-8400 или AMD RYZEN 3 3300X | ОЗУ: 12 GB | Видеокарта: NVIDIA GEFORCE GTX 1060 3 GB или AMD RADEON RX 580 4 GB | Диск: 60 GB",
+      "recommended": "ОС: Windows 10/11 | Процессор: INTEL CORE I7-8700K или AMD RYZEN 5 3600X | ОЗУ: 16 GB | Видеокарта: NVIDIA GEFORCE GTX 1070 8 GB или AMD RADEON RX VEGA 56 8 GB | Диск: 60 GB"
+    }
+  },
+  {
+    "id": 1086940,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/1T22wNlUiNh",
+    "slug": "baldurs-gate-3",
+    "name": "Baldur's Gate 3",
+    "released": "2023-08-03",
+    "background_image": "images/capsules/baldurs-gate-3.webp",
+    "backdrop_image": "images/backdrops/baldurs-gate-3.webp",
+    "rating": 4.88,
+    "rating_top": 5,
+    "metacritic": 96,
+    "playtime": 95,
+    "genres": [
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      },
+      {
+        "id": 10,
+        "name": "Strategy",
+        "slug": "strategy"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Соберите отряд и вернитесь в Забытые Королевства. Вас ждет история о дружбе и предательстве, выживании и самопожертвовании, а также о зове абсолютной власти.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/ss_c73bc54415178c07fef85f54ee26621728c77504.600x338.jpg?t=1777363040"
+      },
+      {
+        "id": 2,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/ss_73d93bea842b93914d966622104dcb8c0f42972b.600x338.jpg?t=1777363040"
+      },
+      {
+        "id": 3,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/ss_cf936d31061b58e98e0c646aee00e6030c410cda.600x338.jpg?t=1777363040"
+      },
+      {
+        "id": 4,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/ss_b6a6ee6e046426d08ceea7a4506a1b5f44181543.600x338.jpg?t=1777363040"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 64-bit | Процессор: Intel I5 4690 / AMD FX 8350 | ОЗУ: 8 GB | Видеокарта: Nvidia GTX 970 / RX 480 (4GB+ VRAM) | Диск: 150 GB SSD",
+      "recommended": "ОС: Windows 10 64-bit | Процессор: Intel i7 8700K / AMD r5 3600 | ОЗУ: 16 GB | Видеокарта: Nvidia 2060 Super / RX 5700 XT (8GB+ VRAM) | Диск: 150 GB SSD"
+    }
+  },
+  {
+    "id": 1174180,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/eaW0tYpxyp0",
+    "slug": "red-dead-redemption-2",
+    "name": "Red Dead Redemption 2",
+    "released": "2018-10-26",
+    "background_image": "images/capsules/red-dead-redemption-2.webp",
+    "backdrop_image": "images/backdrops/red-dead-redemption-2.webp",
+    "rating": 4.75,
+    "rating_top": 5,
+    "metacritic": 97,
+    "playtime": 90,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Америка, 1899 год. Эпоха Дикого Запада подходит к концу. Артур Морган и другие подручные Датча ван дер Линде вынуждены пуститься в бега.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/capsule_616x353.jpg"
+      },
+      {
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "id": 4,
+        "image": "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?auto=format&fit=crop&w=600&q=80"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 | Процессор: Intel Core i5-2500K / AMD FX-6300 | ОЗУ: 8 GB | Видеокарта: Nvidia GeForce GTX 770 2GB / AMD Radeon R9 280 3GB | Диск: 150 GB",
+      "recommended": "ОС: Windows 10 | Процессор: Intel Core i7-4770K / AMD Ryzen 5 1500X | ОЗУ: 12 GB | Видеокарта: Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB | Диск: 150 GB"
+    }
+  },
+  {
+    "id": 4200,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/tax4e4hBBZc",
+    "slug": "portal-2",
+    "name": "Portal 2",
+    "released": "2011-04-18",
+    "background_image": "images/capsules/portal-2.webp",
+    "backdrop_image": "images/backdrops/portal-2.webp",
+    "rating": 4.61,
+    "rating_top": 5,
+    "metacritic": 95,
+    "playtime": 11,
+    "genres": [
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      },
+      {
+        "id": 7,
+        "name": "Puzzle",
+        "slug": "puzzle"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Оригинальная головоломка от Valve. Вам предстоит вновь взяться за портальную пушку и исследовать неизведанные лаборатории Aperture Science под надзором GLaDOS.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_f3f6787d74739d3b2ec8a484b5c994b3d31ef325.600x338.jpg?t=1745363004"
+      },
+      {
+        "id": 2,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_6a4f5afdaa98402de9cf0b59fed27bab3256a6f4.600x338.jpg?t=1745363004"
+      },
+      {
+        "id": 3,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_0cdd90fafc160b52d08b303d205f9fd4e83cf164.600x338.jpg?t=1745363004"
+      },
+      {
+        "id": 4,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/ss_ec35a739b4b33270eb170d9e561c5b016cba50a6.600x338.jpg?t=1745363004"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 7/Vista/XP | Процессор: 3.0 GHz P4, Dual Core 2.0 | ОЗУ: 2 GB | Видеокарта: 128 MB VRAM Pixel Shader 2.0b | Диск: 8 GB",
+      "recommended": "ОС: Windows 10/11 | Процессор: Dual Core 3.0 GHz | ОЗУ: 4 GB | Видеокарта: 512 MB VRAM DirectX 9.0c | Диск: 8 GB"
+    }
+  },
+  {
+    "id": 58175,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/K0u_kAWLJOA",
+    "slug": "god-of-war",
+    "name": "God of War",
+    "released": "2018-04-20",
+    "background_image": "images/capsules/god-of-war.webp",
+    "backdrop_image": "images/backdrops/god-of-war.webp",
+    "rating": 4.68,
+    "rating_top": 5,
+    "metacritic": 94,
+    "playtime": 35,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      }
+    ],
+    "description_raw": "Отомстив богам Олимпа, Кратос поселился в суровом скандинавском царстве. Теперь он снова отец и наставник для своего сына Атрея.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/ss_6eccc970b5de2943546d93d319be1b5c0618f21b.600x338.jpg?t=1763059412"
+      },
+      {
+        "id": 2,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/ss_f1bff24d3967a21d303d95e11ed892e3d9113057.600x338.jpg?t=1763059412"
+      },
+      {
+        "id": 3,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/ss_3670ba72c7e3e9c3c3225547ef2c1053504e62b8.600x338.jpg?t=1763059412"
+      },
+      {
+        "id": 4,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/ss_93a3ca63aa2cd8c675bbb6430324ee3f2d44b845.600x338.jpg?t=1763059412"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 64-bit | Процессор: Intel i5-2500k (4 core 3.3 GHz) или AMD Ryzen 3 1200 | ОЗУ: 8 GB | Видеокарта: NVIDIA GTX 960 (4 GB) | Диск: 70 GB",
+      "recommended": "ОС: Windows 10 64-bit | Процессор: Intel i5-6600k (4 core 3.5 GHz) или AMD Ryzen 5 2400 G | ОЗУ: 8 GB | Видеокарта: NVIDIA GTX 1060 (6 GB) | Диск: 70 GB SSD"
+    }
+  },
+  {
+    "id": 257201,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/ZJeNScpWj20",
+    "slug": "outer-wilds",
+    "name": "Outer Wilds",
+    "released": "2019-05-28",
+    "background_image": "images/capsules/outer-wilds.webp",
+    "backdrop_image": "images/backdrops/outer-wilds.webp",
+    "rating": 4.65,
+    "rating_top": 5,
+    "metacritic": 85,
+    "playtime": 22,
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 7,
+        "name": "Puzzle",
+        "slug": "puzzle"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Шедевр инди-геймдизайна и лауреат многочисленных наград. Неизведанная солнечная система застряла во временной петле: каждые 22 минуты солнце взрывается сверхновой. Исследуйте древние руины Номаи, управляйте космическим челноком и раскройте тайну Ока Вселенной.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/outer-wilds.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 64-bit | Процессор: Intel Core i5-2300 / AMD FX-4350 | ОЗУ: 6 GB | Видеокарта: GeForce GTX 660 / Radeon HD 7870 | Диск: 8 GB",
+      "recommended": "ОС: Windows 10 64-bit | Процессор: Intel Core i5-8400 / AMD Ryzen 5 2600 | ОЗУ: 8 GB | Видеокарта: GeForce GTX 1060 / Radeon RX 580 | Диск: 8 GB SSD"
+    }
+  },
+  {
+    "id": 367520,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/UAO2urG23S4",
+    "slug": "hollow-knight",
+    "name": "Hollow Knight",
+    "released": "2017-02-24",
+    "background_image": "images/capsules/hollow-knight.webp",
+    "backdrop_image": "images/backdrops/hollow-knight.webp",
+    "rating": 4.71,
+    "rating_top": 5,
+    "metacritic": 90,
+    "playtime": 42,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      },
+      {
+        "platform": {
+          "id": 7,
+          "name": "Nintendo",
+          "slug": "nintendo"
+        }
+      }
+    ],
+    "description_raw": "Атмосферное двухмерное приключение в полуразрушенном подземном королевстве Халлоунест. Сражайтесь с порчеными тварями и раскрывайте тайны древних богов.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_5384f9f8b96a0b9934b2bc35a4058376211636d2.600x338.jpg?t=1776125684"
+      },
+      {
+        "id": 2,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_d5b6edd94e77ba6db31c44d8a3c09d807ab27751.600x338.jpg?t=1776125684"
+      },
+      {
+        "id": 3,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_a81e4231cc8d55f58b51a4a938898af46503cae5.600x338.jpg?t=1776125684"
+      },
+      {
+        "id": 4,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_62e10cf506d461e11e050457b08aa0e2a1c078d0.600x338.jpg?t=1776125684"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 7 | Процессор: Intel Core 2 Duo E5200 | ОЗУ: 4 GB | Видеокарта: GeForce 9800GTX+ (1GB) | Диск: 9 GB",
+      "recommended": "ОС: Windows 10 | Процессор: Intel Core i5 | ОЗУ: 8 GB | Видеокарта: GeForce GTX 560 | Диск: 9 GB"
+    }
+  },
+  {
+    "id": 1145360,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/mD8x5xLHRho",
+    "slug": "hades",
+    "name": "Hades",
+    "released": "2020-09-17",
+    "background_image": "images/capsules/hades.webp",
+    "backdrop_image": "images/backdrops/hades.webp",
+    "rating": 4.69,
+    "rating_top": 5,
+    "metacritic": 93,
+    "playtime": 55,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      },
+      {
+        "platform": {
+          "id": 7,
+          "name": "Nintendo",
+          "slug": "nintendo"
+        }
+      }
+    ],
+    "description_raw": "Динамичный roguelike dungeon crawler от авторов Bastion и Transistor. Бросьте вызов богу мертвых и вырвитесь из Подземного мира Олимпа.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_c0fed447426b69981cf1721756acf75369801b31.600x338.jpg?t=1758127023"
+      },
+      {
+        "id": 2,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_d60d7b0c4d5b023733e5b62c9a485c489159d8b3.600x338.jpg?t=1758127023"
+      },
+      {
+        "id": 3,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_68300459a8c3daacb2ec687adcdbf4442fcc4f47.600x338.jpg?t=1758127023"
+      },
+      {
+        "id": 4,
+        "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/ss_bcb499a0dd001f4101823f99ec5094d2872ba6ee.600x338.jpg?t=1758127023"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 7 SP1 | Процессор: Dual Core 2.4 GHz | ОЗУ: 4 GB | Видеокарта: 1GB VRAM / DirectX 10+ support | Диск: 15 GB",
+      "recommended": "ОС: Windows 10 | Процессор: Dual Core 3.0 GHz+ | ОЗУ: 8 GB | Видеокарта: 2GB VRAM / DirectX 10+ support | Диск: 20 GB"
+    }
+  },
+  {
+    "id": 33,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/G203e1HhixY",
+    "slug": "bloodborne",
+    "name": "Bloodborne",
+    "released": "2015-03-24",
+    "background_image": "images/capsules/bloodborne.webp",
+    "backdrop_image": "images/backdrops/bloodborne.webp",
+    "rating": 4.82,
+    "rating_top": 5,
+    "metacritic": 92,
+    "playtime": 45,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      }
+    ],
+    "description_raw": "Мрачный готический шедевр от FromSoftware и Хидэтаки Миядзаки. Отправляйтесь в древний город Ярнам, охваченный эндемической чумой, обратившей жителей в чудовищных тварей. Вооружитесь трансформирующимся оружием охотника и раскройте жуткие тайны Великих.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "https://image.api.playstation.com/vulcan/ap/rnd/202010/2615/Jz1AzNTMqWsNEA2dWQyNVNRK.png"
+      },
+      {
+        "id": 2,
+        "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2614/NVmnBXze9ElHzU6SmykrJLIV.png"
+      },
+      {
+        "id": 3,
+        "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2614/O2Z66UWrZH8zcejxopwWxhGu.png"
+      },
+      {
+        "id": 4,
+        "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2614/BpqNwsA50k83eEJMB48RHG5l.png"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10/11 | Процессор: Intel Core i5-8400 или AMD Ryzen 5 2600 | ОЗУ: 16 GB | Видеокарта: NVidia GTX 1060 или AMD RX 580 | Дик: 50 GB",
+      "recommended": "ОС: Windows 10/11 | Процессор: Intel Core i7-10700K или AMD Ryzen 7 3700X | ОЗУ: 16 GB | Видеокарта: NVidia RTX 3060 или AMD RX 6700 XT | Диск: 50 GB SSD"
+    }
+  },
+  {
+    "id": 9001,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/bky9NlQ4lC8",
+    "slug": "ghost-of-tsushima",
+    "name": "Ghost of Tsushima",
+    "released": "2020-07-17",
+    "background_image": "images/capsules/ghost-of-tsushima.webp",
+    "backdrop_image": "images/backdrops/ghost-of-tsushima.webp",
+    "rating": 4.82,
+    "rating_top": 5,
+    "metacritic": 87,
+    "playtime": 45,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      }
+    ],
+    "description_raw": "В конце XIII века Монгольская империя опустошает целые народы в ходе завоевания Востока. Остров Цусима — единственное препятствие между материковой Японией и огромным флотом вторжения. Дзин Сакай должен пожертвовать кодексом самурая, чтобы стать Призраком и спасти свой народ.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/ghost-of-tsushima.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 64-bit | Процессор: Intel Core i3-7100 или AMD Ryzen 3 1200 | ОЗУ: 8 GB | Видеокарта: NVIDIA GeForce GTX 960 или AMD Radeon RX 5500 XT | Диск: 75 GB",
+      "recommended": "ОС: Windows 10/11 64-bit | Процессор: Intel Core i5-8600 или AMD Ryzen 5 3600 | ОЗУ: 16 GB | Видеокарта: NVIDIA GeForce RTX 2060 или AMD Radeon RX 5600 XT | Диск: 75 GB SSD"
+    }
+  },
+  {
+    "id": 9002,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/WxjeV4hWl_g",
+    "slug": "the-last-of-us-part-i",
+    "name": "The Last of Us Part I",
+    "released": "2022-09-02",
+    "background_image": "images/capsules/the-last-of-us-part-i.webp",
+    "backdrop_image": "images/backdrops/the-last-of-us-part-i.webp",
+    "rating": 4.86,
+    "rating_top": 5,
+    "metacritic": 89,
+    "playtime": 18,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      }
+    ],
+    "description_raw": "Эмоциональное и напряженное путешествие Джоэла и Элли по постапокалиптическим Соединенным Штатам, охваченным опасной грибковой пандемией кордицепса. Полный ремейк шедевра от студии Naughty Dog.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/the-last-of-us-part-i.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 64-bit | Процессор: AMD Ryzen 5 1500X или Intel Core i7-4770K | ОЗУ: 16 GB | Видеокарта: AMD Radeon 470 или NVIDIA GeForce GTX 970 | Диск: 100 GB SSD",
+      "recommended": "ОС: Windows 10/11 64-bit | Процессор: AMD Ryzen 5 3600X или Intel Core i7-8700 | ОЗУ: 16 GB | Видеокарта: AMD Radeon RX 6600 XT или NVIDIA GeForce RTX 2070 SUPER | Диск: 100 GB SSD"
+    }
+  },
+  {
+    "id": 9003,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/mrhrWp67W_U",
+    "slug": "marvels-spider-man-remastered",
+    "name": "Marvel's Spider-Man Remastered",
+    "released": "2022-08-12",
+    "background_image": "images/capsules/marvels-spider-man-remastered.webp",
+    "backdrop_image": "images/backdrops/marvels-spider-man-remastered.webp",
+    "rating": 4.73,
+    "rating_top": 5,
+    "metacritic": 87,
+    "playtime": 25,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      }
+    ],
+    "description_raw": "Почувствуйте себя Человеком-пауком в захватывающем кинематографичном экшене от Insomniac Games. Опытный Питер Паркер сражается с легендарными злодеями Marvel за судьбу Нью-Йорка, балансируя между хаосом личной жизни и долгом защитника.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/marvels-spider-man-remastered.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 64-bit | Процессор: Intel Core i3-4160 или эквивалент AMD | ОЗУ: 8 GB | Видеокарта: NVIDIA GTX 950 или AMD Radeon RX 470 | Диск: 75 GB",
+      "recommended": "ОС: Windows 10/11 64-bit | Процессор: Intel Core i5-4670K или AMD Ryzen 5 1600 | ОЗУ: 16 GB | Видеокарта: NVIDIA GTX 1060 6GB или AMD Radeon RX 580 | Диск: 75 GB SSD"
+    }
+  },
+  {
+    "id": 9004,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/bky9NlQ4lC8",
+    "slug": "death-stranding",
+    "name": "Death Stranding Director's Cut",
+    "released": "2021-09-24",
+    "background_image": "images/capsules/death-stranding.webp",
+    "backdrop_image": "images/backdrops/death-stranding.webp",
+    "rating": 4.61,
+    "rating_top": 5,
+    "metacritic": 86,
+    "playtime": 48,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Визионерское творение Хидео Кодзимы с Норманом Ридусом и Мадсом Миккельсеном. В будущем таинственное явление «Выход смерти» открыло врата между мирами живых и мертвых. Сэм Бриджес должен спасти человечество, объединив изолированные города разрушенного мира.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/death-stranding.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 | Процессор: Intel Core i5-3470 или AMD Ryzen 3 1200 | ОЗУ: 8 GB | Видеокарта: GeForce GTX 1050 4 GB или AMD Radeon RX 560 4 GB | Диск: 80 GB",
+      "recommended": "ОС: Windows 10/11 | Процессор: Intel Core i7-3770 или AMD Ryzen 5 1600 | ОЗУ: 8 GB | Видеокарта: GeForce GTX 1060 6 GB или AMD Radeon RX 590 | Диск: 80 GB SSD"
+    }
+  },
+  {
+    "id": 9005,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/qdcKnXva7yY",
+    "slug": "alan-wake-2",
+    "name": "Alan Wake 2",
+    "released": "2023-10-27",
+    "background_image": "images/capsules/alan-wake-2.webp",
+    "backdrop_image": "images/backdrops/alan-wake-2.webp",
+    "rating": 4.88,
+    "rating_top": 5,
+    "metacritic": 89,
+    "playtime": 22,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Психологический survival-хоррор нового поколения от Remedy Entertainment. Агент ФБР Сага Андерсон прибывает в Брайт-Фоллс для расследования ритуальных убийств, в то время как писатель Алан Уэйк пытается вырваться из кошмарной ловушки Тёмной Обители.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/alan-wake-2.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10/11 64-bit | Процессор: Intel i5-7600K или эквивалент AMD | ОЗУ: 16 GB | Видеокарта: GeForce RTX 2060 или Radeon RX 6600 | Диск: 90 GB SSD",
+      "recommended": "ОС: Windows 10/11 64-bit | Процессор: Intel Ryzen 7 3700X или эквивалент Intel | ОЗУ: 16 GB | Видеокарта: GeForce RTX 3070 или Radeon RX 6700 XT | Диск: 90 GB SSD"
+    }
+  },
+  {
+    "id": 9006,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/j5Xv2lM9DCs",
+    "slug": "resident-evil-4",
+    "name": "Resident Evil 4",
+    "released": "2023-03-24",
+    "background_image": "images/capsules/resident-evil-4.webp",
+    "backdrop_image": "images/backdrops/resident-evil-4.webp",
+    "rating": 4.82,
+    "rating_top": 5,
+    "metacritic": 93,
+    "playtime": 16,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Культовое переосмысление легендарного survival-хоррора от Capcom. Специальный агент Леон С. Кеннеди отправляется в глухую европейскую деревню, чтобы спасти похищенную дочь президента США от зловещего культа Лос Иллюминадос.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/resident-evil-4.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 64-bit | Процессор: AMD Ryzen 3 1200 / Intel Core i5-7500 | ОЗУ: 8 GB | Видеокарта: AMD Radeon RX 560 / NVIDIA GeForce GTX 1050 Ti | Диск: 67 GB",
+      "recommended": "ОС: Windows 10/11 64-bit | Процессор: AMD Ryzen 5 3600 / Intel Core i7-8700 | ОЗУ: 16 GB | Видеокарта: AMD Radeon RX 5700 / NVIDIA GeForce GTX 1070 | Диск: 67 GB SSD"
+    }
+  },
+  {
+    "id": 9007,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/u4-FCsiF5x4",
+    "slug": "horizon-zero-dawn",
+    "name": "Horizon Zero Dawn",
+    "released": "2020-08-07",
+    "background_image": "images/capsules/horizon-zero-dawn.webp",
+    "backdrop_image": "images/backdrops/horizon-zero-dawn.webp",
+    "rating": 4.58,
+    "rating_top": 5,
+    "metacritic": 89,
+    "playtime": 30,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      }
+    ],
+    "description_raw": "Захватывающий постапокалиптический боевик с открытым миром от Guerrilla Games. Примерьте на себя роль Элой — изгнанницы из племени Нора, которой предстоит раскрыть тайны своего происхождения и спасти мир от восстания древних боевых машин.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/horizon-zero-dawn.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 64-bit | Процессор: Intel Core i5-2500K / AMD FX 6300 | ОЗУ: 8 GB | Видеокарта: Nvidia GeForce GTX 780 / AMD Radeon R9 290 | Диск: 100 GB",
+      "recommended": "ОС: Windows 10/11 64-bit | Процессор: Intel Core i7-4770K / Ryzen 5 1500X | ОЗУ: 16 GB | Видеокарта: Nvidia GeForce GTX 1060 (6 GB) / AMD Radeon RX 580 | Диск: 100 GB SSD"
+    }
+  },
+  {
+    "id": 9008,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/rXMX4YJ7Lks",
+    "slug": "sekiro-shadows-die-twice",
+    "name": "Sekiro: Shadows Die Twice",
+    "released": "2019-03-22",
+    "background_image": "images/capsules/sekiro-shadows-die-twice.webp",
+    "backdrop_image": "images/backdrops/sekiro-shadows-die-twice.webp",
+    "rating": 4.85,
+    "rating_top": 5,
+    "metacritic": 91,
+    "playtime": 35,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Триумфатор премии Game of the Year от FromSoftware и Хидэтаки Миядзаки. Воплотитесь в однорукого синоби Волка в феодальной Японии эпохи Сэнгоку и используйте смертоносный протез и катану в бескомпромиссных дуэлях чести.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/sekiro-shadows-die-twice.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 7/8/10 64-bit | Процессор: Intel Core i3-2100 / AMD FX-6300 | ОЗУ: 4 GB | Видеокарта: NVIDIA GeForce GTX 760 / AMD Radeon HD 7950 | Диск: 25 GB",
+      "recommended": "ОС: Windows 10/11 64-bit | Процессор: Intel Core i5-6600K / AMD Ryzen 5 1400 | ОЗУ: 8 GB | Видеокарта: NVIDIA GeForce GTX 970 / AMD Radeon RX 570 | Диск: 25 GB SSD"
+    }
+  },
+  {
+    "id": 9009,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/_hwhqWw_k6s",
+    "slug": "doom-eternal",
+    "name": "DOOM Eternal",
+    "released": "2020-03-20",
+    "background_image": "images/capsules/doom-eternal.webp",
+    "backdrop_image": "images/backdrops/doom-eternal.webp",
+    "rating": 4.73,
+    "rating_top": 5,
+    "metacritic": 88,
+    "playtime": 15,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      },
+      {
+        "platform": {
+          "id": 7,
+          "name": "Nintendo",
+          "slug": "nintendo"
+        }
+      }
+    ],
+    "description_raw": "Ураганный шутер от первого лица от id Software. Армии ада вторглись на Землю, и только Палач Рока способен остановить демоническое нашествие в головокружительной симфонии стрельбы, добиваний и акробатики.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/doom-eternal.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: 64-bit Windows 10 | Процессор: Intel Core i5 @ 3.3 GHz / AMD Ryzen 3 @ 3.1 GHz | ОЗУ: 8 GB | Видеокарта: NVIDIA GeForce GTX 1050Ti (4GB) / AMD Radeon R9 280 (3GB) | Диск: 80 GB",
+      "recommended": "ОС: 64-bit Windows 10/11 | Процессор: Intel Core i7-6700K / AMD Ryzen 7 1800X | ОЗУ: 16 GB | Видеокарта: NVIDIA GeForce GTX 1080 (8GB) / AMD Radeon RX Vega 56 | Диск: 80 GB SSD"
+    }
+  },
+  {
+    "id": 9010,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/n8i53TtQ6BQ",
+    "slug": "mass-effect-legendary-edition",
+    "name": "Mass Effect Legendary Edition",
+    "released": "2021-05-14",
+    "background_image": "images/capsules/mass-effect-legendary-edition.webp",
+    "backdrop_image": "images/backdrops/mass-effect-legendary-edition.webp",
+    "rating": 4.88,
+    "rating_top": 5,
+    "metacritic": 90,
+    "playtime": 60,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Полное обновлённое издание величайшей научно-фантастической трилогии BioWare. Возглавьте экипаж фрегата Нормандия в роли капитана Шепарда и спасите разумную жизнь Млечного Пути от циклических Жнецов.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/mass-effect-legendary-edition.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: 64-bit Windows 10 | Процессор: Intel Core i5 3570 / AMD FX-8350 | ОЗУ: 8 GB | Видеокарта: NVIDIA GTX 760 / Radeon 7970 / R9 280X | Диск: 120 GB",
+      "recommended": "ОС: 64-bit Windows 10/11 | Процессор: Intel Core i7-7700 / AMD Ryzen 7 3700X | ОЗУ: 16 GB | Видеокарта: NVIDIA GTX 1070 / RTX 200 series / Radeon Vega 56 | Диск: 120 GB SSD"
+    }
+  },
+  {
+    "id": 9011,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/_zDZYrP8gLQ",
+    "slug": "dark-souls-iii",
+    "name": "Dark Souls III",
+    "released": "2016-04-12",
+    "background_image": "images/capsules/dark-souls-iii.webp",
+    "backdrop_image": "images/backdrops/dark-souls-iii.webp",
+    "rating": 4.79,
+    "rating_top": 5,
+    "metacritic": 89,
+    "playtime": 32,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Грандиозный финал мрачной саги Dark Souls от FromSoftware. Огонь угасает, и мир погружается в руины. Восстаньте в роли Негорящего, чтобы вернуть Повелителей Пепла на их троны в Храме Огня.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/dark-souls-iii.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 7/8.1/10 64-bit | Процессор: Intel Core i3-2100 / AMD FX-6300 | ОЗУ: 4 GB | Видеокарта: NVIDIA GeForce GTX 750 Ti / ATI Radeon HD 7950 | Диск: 25 GB",
+      "recommended": "ОС: Windows 10/11 64-bit | Процессор: Intel Core i7-3770 / AMD FX-8350 | ОЗУ: 8 GB | Видеокарта: NVIDIA GeForce GTX 970 / ATI Radeon R9 series | Диск: 25 GB SSD"
+    }
+  },
+  {
+    "id": 9012,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/QD1pbwcxhc8",
+    "slug": "detroit-become-human",
+    "name": "Detroit: Become Human",
+    "released": "2018-05-25",
+    "background_image": "images/capsules/detroit-become-human.webp",
+    "backdrop_image": "images/backdrops/detroit-become-human.webp",
+    "rating": 4.67,
+    "rating_top": 5,
+    "metacritic": 84,
+    "playtime": 12,
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      }
+    ],
+    "description_raw": "Кинематографичный интерактивный триллер от Quantic Dream о зарождении сознания у андроидов в Детройте 2038 года. Судьбы трёх героев — Коннора, Кэры и Маркуса — полностью зависят от каждого вашего морального выбора.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/detroit-become-human.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 (64 bit) | Процессор: Intel Core i5-2300 @ 2.8 GHz / AMD Ryzen 3 1200 @ 3.1GHz | ОЗУ: 8 GB | Видеокарта: Nvidia GeForce GTX 780 / AMD Radeon HD 7950 (3GB VRAM) | Диск: 55 GB",
+      "recommended": "ОС: Windows 10/11 (64 bit) | Процессор: Intel Core i5-6600 @ 3.3 GHz / AMD Ryzen 3 1300X @ 3.4 GHz | ОЗУ: 12 GB | Видеокарта: Nvidia GeForce GTX 1060 (6GB) / AMD Radeon RX 580 (4GB) | Диск: 55 GB SSD"
+    }
+  },
+  {
+    "id": 9013,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/F74LLDhAh9w",
+    "slug": "control",
+    "name": "Control",
+    "released": "2019-08-27",
+    "background_image": "images/capsules/control.webp",
+    "backdrop_image": "images/backdrops/control.webp",
+    "rating": 4.49,
+    "rating_top": 5,
+    "metacritic": 85,
+    "playtime": 14,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Сверхъестественный экшен от третьего лица от Remedy Entertainment. В роли директора Федерального Бюро Контроля Джесси Фейден исследуйте загадочный Старейший Дом, овладевайте телекинезом и сражайтесь с потусторонней угрозой Ииссов.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/control.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 7, 64-bit | Процессор: Intel Core i5-4690 / AMD FX 4350 | ОЗУ: 8 GB | Видеокарта: NVIDIA GeForce GTX 780 / AMD Radeon R9 280X | Диск: 42 GB",
+      "recommended": "ОС: Windows 10/11, 64-bit | Процессор: Intel Core i5-7600K / AMD Ryzen 5 1600X | ОЗУ: 16 GB | Видеокарта: NVIDIA GeForce GTX 1060 / AMD Radeon RX 580 | Диск: 42 GB SSD"
+    }
+  },
+  {
+    "id": 9014,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/Ro6r15wzp2o",
+    "slug": "monster-hunter-world",
+    "name": "Monster Hunter: World",
+    "released": "2018-08-09",
+    "background_image": "images/capsules/monster-hunter-world.webp",
+    "backdrop_image": "images/backdrops/monster-hunter-world.webp",
+    "rating": 4.52,
+    "rating_top": 5,
+    "metacritic": 90,
+    "playtime": 95,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Масштабный охотничий экшен от Capcom. Отправляйтесь в неизведанный Новый Свет в составе Исследовательской комиссии, выслеживайте колоссальных чудовищ в живых экосистемах и создавайте непревзойденное снаряжение из трофеев.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/monster-hunter-world.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: WINDOWS 7, 8, 8.1, 10 (64-BIT) | Процессор: Intel Core i5-4460 @ 3.20GHz / AMD FX-6300 | ОЗУ: 8 GB | Видеокарта: NVIDIA GeForce GTX 760 / AMD Radeon R7 260x (VRAM 2GB) | Диск: 52 GB",
+      "recommended": "ОС: WINDOWS 10/11 (64-BIT) | Процессор: Intel Core i7 3770 @ 3.4GHz / AMD Ryzen 5 1500X | ОЗУ: 8 GB | Видеокарта: NVIDIA GeForce GTX 1060 (VRAM 3GB) / AMD Radeon RX 570 (VRAM 4GB) | Диск: 52 GB SSD"
+    }
+  },
+  {
+    "id": 841586,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/5UknFw8V3XQ",
+    "slug": "signalis",
+    "name": "Signalis",
+    "released": "2022-10-27",
+    "background_image": "images/capsules/signalis.webp",
+    "backdrop_image": "images/backdrops/signalis.webp",
+    "rating": 4.58,
+    "rating_top": 5,
+    "metacritic": 81,
+    "playtime": 10,
+    "genres": [
+      {
+        "id": 1,
+        "name": "Horror",
+        "slug": "horror"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      },
+      {
+        "id": 7,
+        "name": "Puzzle",
+        "slug": "puzzle"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      },
+      {
+        "platform": {
+          "id": 7,
+          "name": "Nintendo",
+          "slug": "nintendo"
+        }
+      }
+    ],
+    "description_raw": "Атмосферный психологический сурвайвал-хоррор в ретро-стилистике классических Resident Evil и Silent Hill. В роли реплики Эльстер вы просыпаетесь на заброшенном исследовательском комплексе Sierpinski, охваченном кошмаром, в поисках потерянных воспоминаний и своей напарницы.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/signalis.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 64-bit | Процессор: Intel Core i5-2300 / AMD FX-4350 | ОЗУ: 4 GB | Видеокарта: GeForce GTX 650 / Radeon HD 5750 | Диск: 2 GB",
+      "recommended": "ОС: Windows 10/11 64-bit | Процессор: Intel Core i5-6600K / AMD Ryzen 5 1600 | ОЗУ: 8 GB | Видеокарта: GeForce GTX 960 / Radeon R9 280X | Диск: 2 GB SSD"
+    }
+  },
+  {
+    "id": 9016,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/EE-4GvjKcfs",
+    "slug": "god-of-war-ragnarok",
+    "name": "God of War Ragnarök",
+    "released": "2022-11-09",
+    "background_image": "images/capsules/god-of-war-ragnarok.webp",
+    "backdrop_image": "images/backdrops/god-of-war-ragnarok.webp",
+    "rating": 4.85,
+    "rating_top": 5,
+    "metacritic": 94,
+    "playtime": 40,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      }
+    ],
+    "description_raw": "Продолжение саги от Santa Monica Studio. Кратос и Атрей отправляются в девять миров в поисках ответов, пока войска Асгарда готовятся к предреченной битве, которая положит конец мирозданию.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/god-of-war-ragnarok.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 64-bit | Процессор: Intel i5-4670K / AMD Ryzen 3 1200 | ОЗУ: 8 GB | Видеокарта: GTX 1060 (6GB) / RX 5500 XT | Диск: 190 GB SSD",
+      "recommended": "ОС: Windows 10 64-bit | Процессор: Intel i5-8600 / AMD Ryzen 5 3600 | ОЗУ: 16 GB | Видеокарта: RTX 2060 Super / RX 5700 | Диск: 190 GB SSD"
+    }
+  },
+  {
+    "id": 9017,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/X5aJfebzkrM",
+    "slug": "fallout-4",
+    "name": "Fallout 4",
+    "released": "2015-11-10",
+    "background_image": "images/capsules/fallout-4.webp",
+    "backdrop_image": "images/backdrops/fallout-4.webp",
+    "rating": 4.5,
+    "rating_top": 5,
+    "metacritic": 84,
+    "playtime": 75,
+    "genres": [
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      },
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Легендарное постапокалиптическое приключение от Bethesda Game Studios. Единственный выживший из Убежища 111 вступает в бой за выживание на руинах Бостона, где каждое решение определяет судьбу Содружества.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/fallout-4.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 7/8/10 64-bit | Процессор: Intel Core i5-2300 2.8 GHz / AMD Phenom II X4 945 | ОЗУ: 8 GB | Видеокарта: NVIDIA GTX 550 Ti 2GB / AMD Radeon HD 7870 2GB | Диск: 30 GB",
+      "recommended": "ОС: Windows 7/8/10 64-bit | Процессор: Intel Core i7 4790 3.6 GHz / AMD FX-9590 | ОЗУ: 8 GB | Видеокарта: NVIDIA GTX 780 3GB / AMD Radeon R9 290X 4GB | Диск: 30 GB"
+    }
+  },
+  {
+    "id": 9018,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/wJxNhJ8FiFk",
+    "slug": "nier-automata",
+    "name": "NieR:Automata",
+    "released": "2017-03-17",
+    "background_image": "images/capsules/nier-automata.webp",
+    "backdrop_image": "images/backdrops/nier-automata.webp",
+    "rating": 4.7,
+    "rating_top": 5,
+    "metacritic": 88,
+    "playtime": 38,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      },
+      {
+        "platform": {
+          "id": 7,
+          "name": "Nintendo",
+          "slug": "nintendo"
+        }
+      }
+    ],
+    "description_raw": "Шедевр от Йоко Таро и PlatinumGames. Андроиды 2B, 9S и A2 сражаются за возвращение Земли, захваченной механическими формами жизни, в захватывающей смеси слэшера, драмы и глубокой философии.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/nier-automata.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 7 /8.1 /10 64-bit | Процессор: Intel Core i3 2100 / AMD A8-6500 | ОЗУ: 4 GB | Видеокарта: NVIDIA GeForce GTX 770 / AMD Radeon R9 270X | Диск: 50 GB",
+      "recommended": "ОС: Windows 8.1 /10 64-bit | Процессор: Intel Core i5 4670 / AMD A10-7850K | ОЗУ: 8 GB | Видеокарта: NVIDIA GeForce GTX 980 / AMD Radeon R9 380X | Диск: 50 GB"
+    }
+  },
+  {
+    "id": 9019,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/C2e_Hj643f8",
+    "slug": "disco-elysium",
+    "name": "Disco Elysium - The Final Cut",
+    "released": "2019-10-15",
+    "background_image": "images/capsules/disco-elysium.webp",
+    "backdrop_image": "images/backdrops/disco-elysium.webp",
+    "rating": 4.9,
+    "rating_top": 5,
+    "metacritic": 97,
+    "playtime": 30,
+    "genres": [
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      },
+      {
+        "platform": {
+          "id": 7,
+          "name": "Nintendo",
+          "slug": "nintendo"
+        }
+      }
+    ],
+    "description_raw": "Новаторская изометрическая ролевая игра от ZA/UM с беспрецедентной свободой выбора. Вы — детектив с уникальной системой навыков в приморском районе Ревашоля. Допрашивайте персонажей, расследуйте убийство или погружайтесь во внутренний монолог.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/disco-elysium.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 7/8/10 64-bit | Процессор: Intel Core 2 Duo | ОЗУ: 2 GB | Видеокарта: DirectX 11 совместимая карта с 512 MB | Диск: 20 GB",
+      "recommended": "ОС: Windows 10 64-bit | Процессор: Intel Core i5 / AMD 1500 или лучше | ОЗУ: 4 GB | Видеокарта: NVIDIA GTX 560 / Radeon HD 6850 | Диск: 20 GB"
+    }
+  },
+  {
+    "id": 9020,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/cDT6i2_68Sg",
+    "slug": "dead-space",
+    "name": "Dead Space",
+    "released": "2023-01-27",
+    "background_image": "images/capsules/dead-space.webp",
+    "backdrop_image": "images/backdrops/dead-space.webp",
+    "rating": 4.65,
+    "rating_top": 5,
+    "metacritic": 89,
+    "playtime": 15,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 2,
+        "name": "Shooter",
+        "slug": "shooter"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Переосмысление классического научно-фантастического хоррора от Motive Studio. Инженер Айзек Кларк отправляется на горнодобывающий корабль USG Ишимура, экипаж которого был зверски истреблен мутировавшими созданиями — некроморфами.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/dead-space.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 64-bit | Процессор: Ryzen 5 2600X / Core i5 8600 | ОЗУ: 16 GB | Видеокарта: Radeon RX 5700 / GeForce GTX 1070 | Диск: 50 GB SSD",
+      "recommended": "ОС: Windows 10 64-bit | Процессор: Ryzen 5 5600X / Core i5 11600K | ОЗУ: 16 GB | Видеокарта: Radeon RX 6700 XT / GeForce RTX 2070 | Диск: 50 GB SSD"
+    }
+  },
+  {
+    "id": 9021,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/gHzuHo80U2M",
+    "slug": "marvels-spider-man-miles-morales",
+    "name": "Marvel's Spider-Man: Miles Morales",
+    "released": "2020-11-12",
+    "background_image": "images/capsules/marvels-spider-man-miles-morales.webp",
+    "backdrop_image": "images/backdrops/marvels-spider-man-miles-morales.webp",
+    "rating": 4.6,
+    "rating_top": 5,
+    "metacritic": 88,
+    "playtime": 18,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      }
+    ],
+    "description_raw": "Взрывное приключение в заснеженном Нью-Йорке. Подросток Майлз Моралес осваивает невероятную биоэлектрическую силу и невидимость, принимая мантию Человека-Паука, чтобы спасти свой дом в Гарлеме.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/marvels-spider-man-miles-morales.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 64-bit 1909 | Процессор: Intel Core i3-4160 / AMD FX-6300 | ОЗУ: 8 GB | Видеокарта: NVIDIA GTX 950 / AMD Radeon RX 470 | Диск: 75 GB",
+      "recommended": "ОС: Windows 10 64-bit 1909 | Процессор: Intel Core i5-4670 / AMD Ryzen 5 1600 | ОЗУ: 16 GB | Видеокарта: NVIDIA GTX 1060 6GB / AMD Radeon RX 580 8GB | Диск: 75 GB SSD"
+    }
+  },
+  {
+    "id": 9022,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/q0_qK56fP9E",
+    "slug": "lies-of-p",
+    "name": "Lies of P",
+    "released": "2023-09-19",
+    "background_image": "images/capsules/lies-of-p.webp",
+    "backdrop_image": "images/backdrops/lies-of-p.webp",
+    "rating": 4.6,
+    "rating_top": 5,
+    "metacritic": 84,
+    "playtime": 35,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Захватывающий соулслайк в эстетике Прекрасной эпохи, вдохновленный сказкой о Пиноккио. Вы — марионетка Джеппетто, блуждающая по охваченному безумием и чумой городу Крат. Чтобы стать человеком, вам придется научиться лгать.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/lies-of-p.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 64-bit | Процессор: AMD Ryzen 3 1200 / Intel Core i3-6300 | ОЗУ: 8 GB | Видеокарта: AMD Radeon RX 560 4GB / NVIDIA GeForce GTX 960 4GB | Диск: 50 GB",
+      "recommended": "ОС: Windows 10 64-bit | Процессор: AMD Ryzen 3 1200 / Intel Core i5-6500 | ОЗУ: 16 GB | Видеокарта: AMD Radeon RX 6500 XT 4GB / NVIDIA GeForce GTX 1660 6GB | Диск: 50 GB SSD"
+    }
+  },
+  {
+    "id": 9023,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/7bLNC84j_sk",
+    "slug": "dishonored-2",
+    "name": "Dishonored 2",
+    "released": "2016-11-11",
+    "background_image": "images/capsules/dishonored-2.webp",
+    "backdrop_image": "images/backdrops/dishonored-2.webp",
+    "rating": 4.7,
+    "rating_top": 5,
+    "metacritic": 88,
+    "playtime": 22,
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Признанный стелс-экшен от Arkane Studios. Примерьте роль сверхъестественного убийцы — Корво Аттано или императрицы Эмили Колдуин. Пробирайтесь по залитым солнцем улочкам Карнаки, сочетая уникальные силы Бездны, оружие и скрытность.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/dishonored-2.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 7/8/10 64-bit | Процессор: Intel Core i5-2400 / AMD FX-8320 | ОЗУ: 8 GB | Видеокарта: NVIDIA GTX 660 2GB / AMD Radeon HD 7970 3GB | Диск: 60 GB",
+      "recommended": "ОС: Windows 10 64-bit | Процессор: Intel Core i7-4770 / AMD FX-8350 | ОЗУ: 16 GB | Видеокарта: NVIDIA GTX 1060 6GB / AMD Radeon RX 480 8GB | Диск: 60 GB"
+    }
+  },
+  {
+    "id": 9024,
+    "trailer_url": "https://www.youtube-nocookie.com/embed/u84hRUQlaio",
+    "slug": "stray",
+    "name": "Stray",
+    "released": "2022-07-19",
+    "background_image": "images/capsules/stray.webp",
+    "backdrop_image": "images/backdrops/stray.webp",
+    "rating": 4.55,
+    "rating_top": 5,
+    "metacritic": 83,
+    "playtime": 8,
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie"
+      }
+    ],
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "description_raw": "Атмосферное приключение бродячего рыжего кота в неоновых переулках гибнущего кибергорода. Вместе с маленьким летающим дроном B-12 исследуйте тайны подземного мира, населенного дроидами, и найдите путь домой.",
+    "short_screenshots": [
+      {
+        "id": 1,
+        "image": "images/backdrops/stray.webp"
+      }
+    ],
+    "pc_requirements": {
+      "minimum": "ОС: Windows 10 | Процессор: Intel Core i5-2300 / AMD FX-6350 | ОЗУ: 8 GB | Видеокарта: NVIDIA GeForce GTX 650 Ti 2 GB / AMD Radeon R7 360 2 GB | Диск: 10 GB",
+      "recommended": "ОС: Windows 10 | Процессор: Intel Core i5-8400 / AMD Ryzen 5 2600 | ОЗУ: 8 GB | Видеокарта: NVIDIA GeForce GTX 780 3 GB / AMD Radeon R9 290X 4 GB | Диск: 10 GB"
+    }
+  }
+]

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'game-vault-v1';
+const CACHE_NAME = 'game-vault-v17';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -33,6 +33,26 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
 
   if (url.origin === self.location.origin) {
+    // Stale-While-Revalidate for HTML / navigation requests for instant loads
+    if (event.request.mode === 'navigate' || url.pathname.endsWith('/') || url.pathname.endsWith('index.html')) {
+      event.respondWith(
+        caches.match(event.request).then((cached) => {
+          const fetchPromise = fetch(event.request)
+            .then((response) => {
+              if (response && response.status === 200) {
+                const resClone = response.clone();
+                caches.open(CACHE_NAME).then((cache) => cache.put(event.request, resClone));
+              }
+              return response;
+            })
+            .catch(() => cached || caches.match('./index.html'));
+
+          return cached || fetchPromise;
+        })
+      );
+      return;
+    }
+
     event.respondWith(
       caches.match(event.request).then((cached) => {
         const fetchPromise = fetch(event.request)

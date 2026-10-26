@@ -1,4 +1,4 @@
-const CACHE_NAME = 'game-vault-v17';
+const CACHE_NAME = 'game-vault-v18';
 const STATIC_ASSETS = [
   './',
   './index.html',

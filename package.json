@@ -5,10 +5,10 @@
   "description": "PlayStation 5 inspired video game discovery hub and backlog tracker built with React 19, TypeScript, and Tailwind CSS.",
   "author": "Valeriya Chernyavskaya <lelyaler@gmail.com>",
   "license": "MIT",
-  "homepage": "https://lelyaler.github.io/React-TypeScript/",
+  "homepage": "https://lelyaler.github.io/GameVault/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Lelyaler/React-TypeScript.git"
+    "url": "https://github.com/Lelyaler/GameVault.git"
   },
   "keywords": [
     "react",

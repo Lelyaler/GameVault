@@ -2,7 +2,7 @@
 
 Интерактивный каталог видеоигр и персональный трекер бэклога в эстетике интерфейса PlayStation 5.
 
-**Демо:** [https://lelyaler.github.io/React-TypeScript/](https://lelyaler.github.io/React-TypeScript/)
+**Демо:** [https://lelyaler.github.io/GameVault/](https://lelyaler.github.io/GameVault/)
 
 ---
 

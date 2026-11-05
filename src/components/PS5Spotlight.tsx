@@ -26,7 +26,7 @@ export const PS5Spotlight: React.FC<Props> = ({
         {game.background_image && (
           <div
             onClick={() => onOpenDetails(game)}
-            className="hidden md:block shrink-0 w-28 lg:w-32 aspect-[3/4] rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.8)] border border-white/15 bg-zinc-900 cursor-pointer hover:scale-103 hover:border-white/30 transition-all active:scale-95 group/poster"
+            className="shrink-0 w-20 sm:w-28 lg:w-32 aspect-[3/4] rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.8)] border border-white/15 bg-zinc-900 cursor-pointer hover:scale-103 hover:border-white/30 transition-all active:scale-95 group/poster"
             title={`Открыть карточку игры ${game.name}`}
           >
             <img
@@ -74,7 +74,11 @@ export const PS5Spotlight: React.FC<Props> = ({
             )}
           </div>
 
-          <h1 className="text-2xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-tight sm:leading-none drop-shadow-md">
+          <h1
+            onClick={() => onOpenDetails(game)}
+            className="text-2xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-tight sm:leading-none drop-shadow-md cursor-pointer hover:text-zinc-200 transition-colors w-fit"
+            title={`Открыть карточку игры ${game.name}`}
+          >
             {game.name}
           </h1>
 
@@ -87,9 +91,9 @@ export const PS5Spotlight: React.FC<Props> = ({
             <button
               type="button"
               onClick={() => onOpenDetails(game)}
-              className="inline-flex items-center justify-center px-5 py-2.5 sm:py-3 rounded-xl bg-white text-zinc-950 font-bold text-xs sm:text-sm hover:bg-zinc-200 transition-all hover:scale-103 shadow-lg shadow-white/10 active:scale-95"
+              className="inline-flex items-center justify-center px-5 py-2.5 sm:py-3 rounded-xl bg-white text-zinc-950 font-bold text-xs sm:text-sm hover:bg-zinc-200 transition-all hover:scale-103 shadow-lg shadow-white/10 active:scale-95 cursor-pointer"
             >
-              Об игре
+              Подробнее об игре
             </button>
 
             <button

@@ -64,9 +64,7 @@ export const CatalogFilterBar: React.FC<Props> = ({
 
   return (
     <div className="relative space-y-2.5 py-1">
-      {/* Top row: Collection tabs & Tools */}
       <div className="flex items-center justify-between gap-2.5 flex-wrap sm:flex-nowrap">
-        {/* Main collection categories */}
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5 flex-1 min-w-0">
           <button
             type="button"
@@ -117,7 +115,6 @@ export const CatalogFilterBar: React.FC<Props> = ({
           </button>
         </div>
 
-        {/* Right tools: Reset, Counter, Sort, View mode */}
         <div className="flex items-center gap-2 shrink-0">
           {hasActiveFilters && (
             <button
@@ -179,9 +176,7 @@ export const CatalogFilterBar: React.FC<Props> = ({
         </div>
       </div>
 
-      {/* Sub-bar: Genres and Moods */}
       <div className="pt-1 flex flex-col md:flex-row md:items-center gap-2 sm:gap-3 overflow-x-auto no-scrollbar">
-        {/* Genres */}
         <div className="flex items-center gap-1 shrink-0">
           <span className="text-[11px] font-bold uppercase tracking-wider text-zinc-500 shrink-0 mr-1.5">
             Жанр:
@@ -220,7 +215,6 @@ export const CatalogFilterBar: React.FC<Props> = ({
 
         <div className="hidden md:block h-3.5 w-px bg-white/10 shrink-0" />
 
-        {/* Moods */}
         <div className="flex items-center gap-1 shrink-0">
           <span className="text-[11px] font-bold uppercase tracking-wider text-zinc-500 shrink-0 mr-1.5">
             Настроение:

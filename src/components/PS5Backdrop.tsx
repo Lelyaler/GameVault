@@ -44,7 +44,6 @@ export const PS5Backdrop: React.FC<Props> = ({ activeGame }) => {
         />
       </picture>
 
-      {/* Atmospheric lighting layers: subtle smooth fade so game art is vibrant while text stays readable */}
       <div className="absolute inset-0 bg-gradient-to-t from-[#050608] via-[#050608]/70 via-35% to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#050608]/90 via-[#050608]/50 via-40% to-transparent md:w-3/4" />
       <div className="absolute top-0 inset-x-0 h-24 bg-gradient-to-b from-[#050608]/70 to-transparent" />

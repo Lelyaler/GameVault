@@ -8,9 +8,14 @@ interface Props {
   onHoverGame: (game: Game) => void;
   onSelectGame: (game: Game) => void;
   getStatus: (gameId: number) => BacklogStatus | null;
+  onNavigateLeft?: () => void;
+  onNavigateRight?: () => void;
 }
 
-const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80';
+const FALLBACK_IMAGE =
+  'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80';
+
+const BASE_COPY = 2;
 
 export const PS5GameShelf: React.FC<Props> = ({
   games,
@@ -18,39 +23,34 @@ export const PS5GameShelf: React.FC<Props> = ({
   onHoverGame,
   onSelectGame,
   getStatus,
+  onNavigateLeft,
+  onNavigateRight,
 }) => {
+  const shelfRef = useRef<HTMLDivElement>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const cardRefs = useRef<Map<string, HTMLDivElement>>(new Map());
-  const isMouseDownRef = useRef<boolean>(false);
-  const startXRef = useRef<number>(0);
-  const startScrollLeftRef = useRef<number>(0);
-  const hasDraggedRef = useRef<boolean>(false);
-  const [isDragging, setIsDragging] = useState<boolean>(false);
 
-  // Stride of one complete set of games in pixels
   const setWidthRef = useRef<number>(0);
-  // Active copy index (0: left clone, 1: primary middle set, 2: right clone)
-  const [activeCopyIdx, setActiveCopyIdx] = useState<number>(1);
-  const prevActiveGameIdRef = useRef<number>(activeGameId);
-  const isProgrammaticScrollingRef = useRef<boolean>(false);
+  const [activeCopyIdx, setActiveCopyIdx] = useState<number>(BASE_COPY);
+  const activeCopyRef = useRef<number>(BASE_COPY);
+  const prevGameIdRef = useRef<number>(activeGameId);
+  const isNormalizingRef = useRef<boolean>(false);
+  const isInitialCenteredRef = useRef<boolean>(false);
 
-  // Build looping items list: 3 copies for seamless circular scrolling
   const { displayItems, isLoopable } = useMemo(() => {
     if (games.length === 0) return { displayItems: [], isLoopable: false };
     if (games.length === 1) {
       return {
-        displayItems: [{ game: games[0], copyIdx: 1, itemIdx: 0, uid: `1-0-${games[0].id}` }],
+        displayItems: [
+          { game: games[0], copyIdx: BASE_COPY, itemIdx: 0, uid: `${BASE_COPY}-0-${games[0].id}` },
+        ],
         isLoopable: false,
       };
     }
 
-    // Ensure 1 set is at least 10 cards so setWidth exceeds any screen viewport
-    const repeats = Math.max(1, Math.ceil(10 / games.length));
-    const singleSet = Array.from({ length: repeats }, () => games).flat();
-
     const items: Array<{ game: Game; copyIdx: number; itemIdx: number; uid: string }> = [];
-    for (let c = 0; c < 3; c++) {
-      singleSet.forEach((game, idx) => {
+    for (let c = 0; c < 5; c++) {
+      games.forEach((game, idx) => {
         items.push({
           game,
           copyIdx: c,
@@ -71,297 +71,219 @@ export const PS5GameShelf: React.FC<Props> = ({
     }
   }, []);
 
-  // Update setWidth based on distance between card 0 of copy 0 and card 0 of copy 1
   const updateSetWidth = useCallback(() => {
     if (!isLoopable || games.length === 0) return;
-    const card0 = cardRefs.current.get(`0-0-${games[0].id}`);
     const card1 = cardRefs.current.get(`1-0-${games[0].id}`);
-    if (card0 && card1) {
-      setWidthRef.current = card1.offsetLeft - card0.offsetLeft;
+    const card2 = cardRefs.current.get(`2-0-${games[0].id}`);
+    if (card1 && card2) {
+      const diff = card2.offsetLeft - card1.offsetLeft;
+      if (diff > 0) {
+        setWidthRef.current = diff;
+      }
     }
   }, [isLoopable, games]);
 
-  // Center active card on mount or when games list changes
-  useEffect(() => {
-    const container = scrollContainerRef.current;
-    if (!container || games.length === 0) return;
+  const scrollToCard = useCallback(
+    (copyIdx: number, itemIdx: number, gameId: number, smooth = true) => {
+      const container = scrollContainerRef.current;
+      if (!container) return;
 
+      const uid = `${copyIdx}-${itemIdx}-${gameId}`;
+      const card = cardRefs.current.get(uid);
+      if (!card) return;
+
+      const targetLeft = card.offsetLeft - (container.clientWidth - card.offsetWidth) / 2;
+      container.scrollTo({
+        left: Math.max(0, targetLeft),
+        behavior: smooth ? 'smooth' : 'auto',
+      });
+    },
+    []
+  );
+
+  const normalizeToCenter = useCallback(() => {
+    if (isNormalizingRef.current || !isLoopable || games.length === 0) return;
+    const container = scrollContainerRef.current;
+    const setWidth = setWidthRef.current;
+    if (!container || !setWidth || setWidth <= 0) return;
+
+    const currentCopy = activeCopyRef.current;
+    if (currentCopy === BASE_COPY) return;
+
+    const diff = BASE_COPY - currentCopy;
+    const shift = diff * setWidth;
+    if (shift === 0) return;
+
+    isNormalizingRef.current = true;
+    container.scrollLeft += shift;
+    activeCopyRef.current = BASE_COPY;
+    setActiveCopyIdx(BASE_COPY);
+
+    requestAnimationFrame(() => {
+      isNormalizingRef.current = false;
+    });
+  }, [isLoopable, games]);
+
+  useEffect(() => {
+    if (games.length === 0) return;
     updateSetWidth();
 
-    // Center active game in copy 1
-    let card: HTMLDivElement | undefined;
-    for (const [k, el] of cardRefs.current.entries()) {
-      if (k.startsWith('1-') && k.endsWith(`-${activeGameId}`)) {
-        card = el;
-        break;
+    const prevId = prevGameIdRef.current;
+    const curId = activeGameId;
+    prevGameIdRef.current = curId;
+
+    const prevIdx = games.findIndex((g) => g.id === prevId);
+    const curIdx = games.findIndex((g) => g.id === curId);
+    if (curIdx === -1) return;
+
+    if (!isInitialCenteredRef.current) {
+      isInitialCenteredRef.current = true;
+      activeCopyRef.current = BASE_COPY;
+      setActiveCopyIdx(BASE_COPY);
+      scrollToCard(BASE_COPY, curIdx, curId, false);
+      return;
+    }
+
+    if (prevId === curId) return;
+
+    let targetCopy = activeCopyRef.current;
+    if (prevIdx !== -1) {
+      if (prevIdx === 0 && curIdx === games.length - 1) {
+        targetCopy = activeCopyRef.current - 1;
+      } else if (prevIdx === games.length - 1 && curIdx === 0) {
+        targetCopy = activeCopyRef.current + 1;
       }
     }
 
-    if (!card) {
-      card = cardRefs.current.get(`1-0-${games[0].id}`);
-    }
+    activeCopyRef.current = targetCopy;
+    setActiveCopyIdx(targetCopy);
+    scrollToCard(targetCopy, curIdx, curId, true);
+  }, [activeGameId, games, scrollToCard, updateSetWidth]);
 
-    if (card) {
-      container.scrollLeft = card.offsetLeft - (container.clientWidth - card.offsetWidth) / 2;
-    }
-  }, [games, isLoopable, updateSetWidth, activeGameId]);
-
-  // ResizeObserver to keep setWidth updated on container/window resize
   useEffect(() => {
     const container = scrollContainerRef.current;
     if (!container || !isLoopable) return;
 
+    let timer: number | null = null;
+    const handleScrollIdle = () => {
+      if (timer) window.clearTimeout(timer);
+      timer = window.setTimeout(() => {
+        normalizeToCenter();
+      }, 250);
+    };
+
+    container.addEventListener('scroll', handleScrollIdle, { passive: true });
+    container.addEventListener('scrollend', normalizeToCenter, { passive: true });
+
+    return () => {
+      if (timer) window.clearTimeout(timer);
+      container.removeEventListener('scroll', handleScrollIdle);
+      container.removeEventListener('scrollend', normalizeToCenter);
+    };
+  }, [isLoopable, normalizeToCenter]);
+
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container || !isLoopable || games.length === 0) return;
+
     const ro = new ResizeObserver(() => {
       updateSetWidth();
+      const curIdx = games.findIndex((g) => g.id === activeGameId);
+      if (curIdx !== -1) {
+        scrollToCard(activeCopyRef.current, curIdx, activeGameId, false);
+      }
     });
+
     ro.observe(container);
     return () => ro.disconnect();
-  }, [isLoopable, updateSetWidth]);
+  }, [isLoopable, games, activeGameId, updateSetWidth, scrollToCard]);
 
-  // Seamless boundary wrap during manual scrolling
-  const handleScroll = useCallback(() => {
-    const container = scrollContainerRef.current;
-    const setWidth = setWidthRef.current;
-    if (!container || !isLoopable || !setWidth || setWidth <= 0) return;
-
-    if (isProgrammaticScrollingRef.current) return;
-
-    if (container.scrollLeft >= setWidth * 2) {
-      container.scrollLeft -= setWidth;
-    } else if (container.scrollLeft < setWidth) {
-      container.scrollLeft += setWidth;
-    }
-  }, [isLoopable]);
-
-  // Wheel horizontal scroll with infinite wrapping
   useEffect(() => {
+    const shelf = shelfRef.current;
     const el = scrollContainerRef.current;
-    if (!el) return;
+    if (!shelf || !el) return;
 
-    const handleWheel = (e: WheelEvent) => {
-      // Smooth horizontal swipe or Shift+wheel only
-      if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+    const stopWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      e.stopPropagation();
+    };
+
+    const stopTouch = (e: TouchEvent) => {
+      if (e.touches.length === 1) {
         e.preventDefault();
-        el.scrollLeft += e.deltaX * 0.85;
-
-        const setWidth = setWidthRef.current;
-        if (isLoopable && setWidth > 0) {
-          if (el.scrollLeft >= setWidth * 2) {
-            el.scrollLeft -= setWidth;
-          } else if (el.scrollLeft < setWidth) {
-            el.scrollLeft += setWidth;
-          }
-        }
-      } else if (e.shiftKey && Math.abs(e.deltaY) > 0) {
-        e.preventDefault();
-        el.scrollLeft += e.deltaY * 0.85;
-
-        const setWidth = setWidthRef.current;
-        if (isLoopable && setWidth > 0) {
-          if (el.scrollLeft >= setWidth * 2) {
-            el.scrollLeft -= setWidth;
-          } else if (el.scrollLeft < setWidth) {
-            el.scrollLeft += setWidth;
-          }
-        }
       }
     };
 
-    el.addEventListener('wheel', handleWheel, { passive: false });
-    return () => el.removeEventListener('wheel', handleWheel);
-  }, [isLoopable]);
+    shelf.addEventListener('wheel', stopWheel, { passive: false });
+    el.addEventListener('wheel', stopWheel, { passive: false });
+    el.addEventListener('touchmove', stopTouch, { passive: false });
 
-  // Active game navigation & smooth scroll
-  useEffect(() => {
-    const container = scrollContainerRef.current;
-    if (!container || games.length === 0) {
-      prevActiveGameIdRef.current = activeGameId;
+    return () => {
+      shelf.removeEventListener('wheel', stopWheel);
+      el.removeEventListener('wheel', stopWheel);
+      el.removeEventListener('touchmove', stopTouch);
+    };
+  }, []);
+
+  const handlePrev = () => {
+    if (onNavigateLeft) {
+      onNavigateLeft();
       return;
     }
-
-    const prevGameId = prevActiveGameIdRef.current;
-    prevActiveGameIdRef.current = activeGameId;
-
-    if (!isLoopable) {
-      const card = cardRefs.current.get(`1-0-${activeGameId}`);
-      if (card) {
-        card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-      }
-      return;
-    }
-
-    const prevIdx = games.findIndex((g) => g.id === prevGameId);
+    if (games.length === 0) return;
     const curIdx = games.findIndex((g) => g.id === activeGameId);
-
-    if (curIdx === -1) return;
-
-    // Detect circular boundary wrap
-    const isWrapForward = prevIdx === games.length - 1 && curIdx === 0;
-    const isWrapBackward = prevIdx === 0 && curIdx === games.length - 1;
-
-    let targetCopy = 1;
-    if (isWrapForward) {
-      targetCopy = 2; // Glide forward into right clone
-    } else if (isWrapBackward) {
-      targetCopy = 0; // Glide backward into left clone
-    }
-
-    setActiveCopyIdx(targetCopy);
-
-    // Find target card in the chosen copy
-    let targetCard: HTMLDivElement | undefined;
-    for (const [k, el] of cardRefs.current.entries()) {
-      if (k.startsWith(`${targetCopy}-`) && k.endsWith(`-${activeGameId}`)) {
-        targetCard = el;
-        break;
-      }
-    }
-
-    if (targetCard) {
-      const cardLeft = targetCard.offsetLeft;
-      const cardRight = cardLeft + targetCard.offsetWidth;
-      const containerLeft = container.scrollLeft;
-      const containerRight = containerLeft + container.clientWidth;
-
-      const isOutOfView = cardLeft < containerLeft + 30 || cardRight > containerRight - 30;
-
-      if (isWrapForward || isWrapBackward || isOutOfView) {
-        isProgrammaticScrollingRef.current = true;
-        const targetScrollLeft = targetCard.offsetLeft - (container.clientWidth - targetCard.offsetWidth) / 2;
-
-        container.scrollTo({
-          left: targetScrollLeft,
-          behavior: 'smooth',
-        });
-
-        let isDone = false;
-        const finishScroll = () => {
-          if (isDone) return;
-          isDone = true;
-          container.removeEventListener('scrollend', finishScroll);
-
-          if (!scrollContainerRef.current || !setWidthRef.current) {
-            isProgrammaticScrollingRef.current = false;
-            return;
-          }
-          const currentSetWidth = setWidthRef.current;
-
-          // Normalize back to copy 1 seamlessly
-          if (targetCopy === 2) {
-            scrollContainerRef.current.scrollLeft -= currentSetWidth;
-            setActiveCopyIdx(1);
-          } else if (targetCopy === 0) {
-            scrollContainerRef.current.scrollLeft += currentSetWidth;
-            setActiveCopyIdx(1);
-          }
-          isProgrammaticScrollingRef.current = false;
-        };
-
-        container.addEventListener('scrollend', finishScroll, { once: true });
-        const timer = setTimeout(finishScroll, 380);
-
-        return () => {
-          isDone = true;
-          container.removeEventListener('scrollend', finishScroll);
-          clearTimeout(timer);
-        };
-      }
-    }
-  }, [activeGameId, games, isLoopable]);
-
-  const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!scrollContainerRef.current) return;
-    isMouseDownRef.current = true;
-    startXRef.current = e.pageX - scrollContainerRef.current.offsetLeft;
-    startScrollLeftRef.current = scrollContainerRef.current.scrollLeft;
-    hasDraggedRef.current = false;
+    const prevIdx = curIdx <= 0 ? games.length - 1 : curIdx - 1;
+    onHoverGame(games[prevIdx]);
   };
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!isMouseDownRef.current || !scrollContainerRef.current) return;
-    const x = e.pageX - scrollContainerRef.current.offsetLeft;
-    const walk = x - startXRef.current;
-    if (Math.abs(walk) > 4) {
-      hasDraggedRef.current = true;
-      if (!isDragging) setIsDragging(true);
+  const handleNext = () => {
+    if (onNavigateRight) {
+      onNavigateRight();
+      return;
     }
-    const container = scrollContainerRef.current;
-    container.scrollLeft = startScrollLeftRef.current - walk;
-
-    const setWidth = setWidthRef.current;
-    if (isLoopable && setWidth > 0) {
-      if (container.scrollLeft >= setWidth * 2) {
-        container.scrollLeft -= setWidth;
-        startScrollLeftRef.current -= setWidth;
-      } else if (container.scrollLeft < setWidth) {
-        container.scrollLeft += setWidth;
-        startScrollLeftRef.current += setWidth;
-      }
-    }
-  };
-
-  const handleMouseUpOrLeave = () => {
-    isMouseDownRef.current = false;
-    setTimeout(() => {
-      hasDraggedRef.current = false;
-      setIsDragging(false);
-    }, 60);
-  };
-
-  const scroll = (direction: 'left' | 'right') => {
-    const container = scrollContainerRef.current;
-    if (!container) return;
-
-    const setWidth = setWidthRef.current;
-    if (isLoopable && setWidth > 0) {
-      if (direction === 'right' && container.scrollLeft >= setWidth * 2 - 400) {
-        container.scrollLeft -= setWidth;
-      } else if (direction === 'left' && container.scrollLeft <= setWidth + 400) {
-        container.scrollLeft += setWidth;
-      }
-    }
-
-    const offset = direction === 'left' ? -350 : 350;
-    container.scrollBy({ left: offset, behavior: 'smooth' });
+    if (games.length === 0) return;
+    const curIdx = games.findIndex((g) => g.id === activeGameId);
+    const nextIdx = curIdx >= games.length - 1 ? 0 : curIdx + 1;
+    onHoverGame(games[nextIdx]);
   };
 
   return (
-    <div className="relative group/shelf mt-auto pt-2 sm:pt-4 pb-4 sm:pb-8">
+    <div ref={shelfRef} className="relative group/shelf mt-auto pt-2 sm:pt-4 pb-2 sm:pb-4 select-none">
       <h2 className="sr-only">Полка игр</h2>
-      <button
-        type="button"
-        onClick={() => scroll('left')}
-        className="hidden md:flex absolute -left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/85 hover:bg-white text-zinc-300 hover:text-zinc-950 items-center justify-center backdrop-blur-md opacity-0 group-hover/shelf:opacity-100 transition-all shadow-2xl cursor-pointer"
-        title="Прокрутить влево"
-      >
-        <ChevronLeft className="w-5 h-5" />
-      </button>
 
-      <button
-        type="button"
-        onClick={() => scroll('right')}
-        className="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/85 hover:bg-white text-zinc-300 hover:text-zinc-950 items-center justify-center backdrop-blur-md opacity-0 group-hover/shelf:opacity-100 transition-all shadow-2xl cursor-pointer"
-        title="Прокрутить вправо"
-      >
-        <ChevronRight className="w-5 h-5" />
-      </button>
+      {isLoopable && (
+        <>
+          <button
+            type="button"
+            onClick={handlePrev}
+            className="flex absolute left-1 sm:left-3 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/85 hover:bg-white text-zinc-200 hover:text-zinc-950 items-center justify-center backdrop-blur-md opacity-90 hover:opacity-100 transition-all shadow-2xl cursor-pointer border border-white/20 hover:border-white active:scale-95"
+            title="Предыдущая игра"
+            aria-label="Предыдущая игра"
+          >
+            <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
+          </button>
+
+          <button
+            type="button"
+            onClick={handleNext}
+            className="flex absolute right-1 sm:right-3 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/85 hover:bg-white text-zinc-200 hover:text-zinc-950 items-center justify-center backdrop-blur-md opacity-90 hover:opacity-100 transition-all shadow-2xl cursor-pointer border border-white/20 hover:border-white active:scale-95"
+            title="Следующая игра"
+            aria-label="Следующая игра"
+          >
+            <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
+          </button>
+        </>
+      )}
+
+      <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-10 sm:w-16 bg-gradient-to-r from-[#050608]/90 to-transparent z-20" />
+      <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-10 sm:w-16 bg-gradient-to-l from-[#050608]/90 to-transparent z-20" />
 
       <div
         ref={scrollContainerRef}
-        onScroll={handleScroll}
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUpOrLeave}
-        onMouseLeave={handleMouseUpOrLeave}
-        className={`flex items-center gap-3 sm:gap-4 overflow-x-auto no-scrollbar py-3 sm:py-4 px-1 sm:px-2 touch-pan-x overscroll-x-contain ${
-          isDragging ? 'cursor-grabbing select-none' : 'cursor-grab'
-        }`}
+        className="flex items-center gap-3 sm:gap-4 overflow-x-hidden no-scrollbar py-6 sm:py-8 px-4 sm:px-6 touch-none overscroll-none"
       >
         {displayItems.map(({ game, copyIdx, itemIdx, uid }) => {
-          const isActive =
-            game.id === activeGameId &&
-            copyIdx === activeCopyIdx &&
-            itemIdx < games.length;
+          const isActive = game.id === activeGameId && copyIdx === activeCopyIdx;
           const status = getStatus(game.id);
 
           return (
@@ -370,25 +292,16 @@ export const PS5GameShelf: React.FC<Props> = ({
               ref={setCardRef(uid)}
               onClick={(e) => {
                 e.stopPropagation();
-                if (hasDraggedRef.current) return;
-                if (copyIdx === 2 && setWidthRef.current && scrollContainerRef.current) {
-                  scrollContainerRef.current.scrollLeft -= setWidthRef.current;
-                  setActiveCopyIdx(1);
-                } else if (copyIdx === 0 && setWidthRef.current && scrollContainerRef.current) {
-                  scrollContainerRef.current.scrollLeft += setWidthRef.current;
-                  setActiveCopyIdx(1);
-                } else {
-                  setActiveCopyIdx(copyIdx);
-                }
+                activeCopyRef.current = copyIdx;
+                setActiveCopyIdx(copyIdx);
+                scrollToCard(copyIdx, itemIdx, game.id, true);
                 onHoverGame(game);
-                if (isActive) {
-                  onSelectGame(game);
-                }
+                onSelectGame(game);
               }}
               className={`relative shrink-0 w-32 sm:w-44 aspect-[3/4] rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 select-none ${
                 isActive
-                  ? 'scale-103 sm:scale-105 shadow-[0_20px_50px_rgba(0,0,0,0.95)] -translate-y-1.5 sm:-translate-y-2 z-10 brightness-110'
-                  : 'opacity-70 hover:opacity-100 hover:scale-102 hover:-translate-y-1 shadow-lg shadow-black/40'
+                  ? 'scale-105 shadow-[0_20px_45px_rgba(0,0,0,0.95)] -translate-y-2 z-10 brightness-110 ring-2 ring-white/90 shadow-white/10'
+                  : 'opacity-70 hover:opacity-100 hover:scale-102 hover:-translate-y-1 shadow-lg shadow-black/40 ring-1 ring-white/10'
               }`}
             >
               <img
@@ -396,15 +309,15 @@ export const PS5GameShelf: React.FC<Props> = ({
                 alt={game.name}
                 width={176}
                 height={235}
-                loading={copyIdx === 1 && itemIdx < 4 ? 'eager' : 'lazy'}
-                fetchPriority={copyIdx === 1 && itemIdx === 0 ? 'high' : 'auto'}
+                loading={copyIdx === BASE_COPY && itemIdx < 4 ? 'eager' : 'lazy'}
+                fetchPriority={copyIdx === BASE_COPY && itemIdx === 0 ? 'high' : 'auto'}
                 decoding="async"
                 onError={(e) => {
                   e.currentTarget.src = FALLBACK_IMAGE;
                 }}
                 className="w-full h-full object-cover object-center pointer-events-none"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent pointer-events-none" />
 
               {status && (
                 <div className="absolute top-2 left-2 p-1 rounded-md bg-black/60 backdrop-blur-md">

@@ -367,8 +367,13 @@ function App() {
                 games={displayedGames}
                 activeGameId={currentFocusedGame?.id || 0}
                 onHoverGame={setFocusedGame}
-                onSelectGame={handleSelectGame}
+                onSelectGame={(game) => {
+                  sounds.playSelect();
+                  handleSelectGame(game);
+                }}
                 getStatus={getStatus}
+                onNavigateLeft={handleNavigateLeft}
+                onNavigateRight={handleNavigateRight}
               />
             ) : (
               <div className="py-3 sm:py-6">
